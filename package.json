@@ -61,6 +61,7 @@
     "mocha": "^5.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-syntax-highlighter": "^8.0.1",
     "rimraf": "^2.6.2",
     "rollup": "^0.63.4",
     "rollup-plugin-babel": "^3.0.2",
@@ -72,11 +73,10 @@
     "webpack-dev-server": "^3.1.5"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^16.2.0-0"
   },
   "dependencies": {
     "exenv": "^1.2.0",
-    "prop-types": "^15.6.2",
-    "react-syntax-highlighter": "^8.0.1"
+    "prop-types": "^15.6.2"
   }
 }
