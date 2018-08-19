@@ -1,5 +1,5 @@
 {
-  "name": "react-key-handler",
+  "name": "@gforge/react-key-handler",
   "version": "2.0.0",
   "description": "React component to handle keyboard events",
   "homepage": "https://github.com/ayrton/react-key-handler",
