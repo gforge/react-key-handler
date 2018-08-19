@@ -1,5 +1,14 @@
 {
   "parser": "babel-eslint",
+  "settings": {
+    "react": {
+      "version": "16.4",
+      "flowVersion": "0.79.1"
+    },
+    "propWrapperFunctions": [
+      "forbidExtraProps"
+    ]
+  },
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
     "flow-vars/define-flow-type": "error",
