@@ -1,21 +1,17 @@
 {
-  "parser": "babel-eslint",
-  "rules": {
-    "comma-dangle": ["error", "always-multiline"],
-    "flow-vars/define-flow-type": "error",
-    "flow-vars/use-flow-type": "error",
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"]
-  },
   "env": {
     "browser": true,
     "es6": true,
     "mocha": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:flowtype/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
@@ -24,8 +20,19 @@
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "flow-vars"
-  ]
+  "plugins": ["flowtype", "react"],
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "flowtype/no-types-missing-file-annotation": "off",
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  },
+  "settings": {
+    "react": {
+      "flowVersion": "0.79",
+      "version": "16.2"
+    }
+  }
 }
